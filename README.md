@@ -1,5 +1,5 @@
 <!-- Profile Header -->
-<h1 align="center">Hi 👋, I'm Bisu Ghlan (aka Sumi)</h1>
+<h1 align="center">Hi 👋, I'm Bisu Ghlan</h1>
 <h3 align="center">🌱 Beginner Programmer | 🛠️ Learning by Building | 🇳🇵 Nepal</h3>
 
 <!-- Typing SVG -->
