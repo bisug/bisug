@@ -35,8 +35,4 @@
 [![](https://visitcount.itsvg.in/api?id=bisug&icon=0&color=0)](https://visitcount.itsvg.in)
 
 
-<br clear="both">
-
-<img src="https://raw.githubusercontent.com/bisug/bisug/output/snake.svg" alt="Snake animation" />
-
-###
+![snake gif](https://github.com/bisug/bisug/blob/output/github-contribution-grid-snake.svg)
