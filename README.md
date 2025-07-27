@@ -36,8 +36,8 @@
 
 ## 📫 Connect with Me
 
-- Telegram: [@yourTelegramUsername](https://t.me/GautheliChari)  
-- GitHub: [bisug](https://github.com/bisug)
+[![Telegram](https://img.shields.io/badge/Telegram-%230096D6.svg?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/GauthaliChari)  
+[![GitHub](https://img.shields.io/badge/GitHub-%2312100E.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bisug)
 
 ---
 
