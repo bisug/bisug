@@ -65,4 +65,4 @@
 
 ## 🐍 Contribution Snake
 
-![snake gif](https://github.com/bisug/besbt5v/blob/output/github-contribution-grid-snake.svg)
+![snake gif](https://github.com/bisug/bisug/blob/output/github-contribution-grid-snake.svg)
