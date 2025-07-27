@@ -18,51 +18,23 @@
 
 ---
 
-<details>
-  <summary>💻 Tech Stack</summary>
+# 💻 Tech Stack:
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![Render](https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+# 📊 GitHub Stats:
+![](https://github-readme-stats.vercel.app/api?username=bisug&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
+![](https://nirzak-streak-stats.vercel.app/?user=bisug&theme=dark&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=bisug&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
-  ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-  ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-  ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
-  ![Render](https://img.shields.io/badge/Render-46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)
-  ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+## 🏆 GitHub Trophies
+![](https://github-profile-trophy.vercel.app/?username=bisug&theme=radical&no-frame=false&no-bg=false&margin-w=4)
 
-</details>
-
----
-
-<details>
-  <summary>📊 GitHub Stats</summary>
-
-  ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=bisug&theme=dark&hide_border=false&include_all_commits=true&count_private=true)
-
-  ![GitHub Streak](https://nirzak-streak-stats.vercel.app/?user=bisug&theme=dark&hide_border=false)
-
-  ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=bisug&theme=dark&hide_border=false&layout=compact)
-
-</details>
+### 🔝 Top Contributed Repo
+![](https://github-contributor-stats.vercel.app/api?username=bisug&limit=5&theme=dark&combine_all_yearly_contributions=true)
 
 ---
-
-<details>
-  <summary>🏆 GitHub Trophies</summary>
-
-  ![Trophies](https://github-profile-trophy.vercel.app/?username=bisug&theme=radical&no-frame=false&no-bg=false&margin-w=4)
-
-</details>
-
----
-
-## 📫 Connect with Me
-
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/yourTelegramUsername)  
-[![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bisug)
-
----
-
 [![](https://visitcount.itsvg.in/api?id=bisug&icon=0&color=0)](https://visitcount.itsvg.in)
 
 
-## 🐍 Contribution Snake
+## 🐍 Snake
 
 ![snake gif](https://github.com/bisug/bisug/blob/output/github-contribution-grid-snake.svg)
