@@ -2,7 +2,7 @@ name: Generate GitHub Contribution Snake
 
 on:
   schedule:
-    - cron: "0 */4 * * *"  # every 4 hours
+    - cron: "0 0 * * *"  # every 24 hours
   workflow_dispatch:
 
 jobs:
