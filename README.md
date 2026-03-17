@@ -66,12 +66,6 @@ class BisuG:
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 
-**Bot Frameworks**
-
-![Pyrogram](https://img.shields.io/badge/Pyrogram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)
-![Kurigram](https://img.shields.io/badge/Kurigram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)
-![aiogram](https://img.shields.io/badge/aiogram-009DDB?style=for-the-badge&logo=python&logoColor=white)
-
 **Cloud & Deployment**
 
 ![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
@@ -274,8 +268,6 @@ A music bot that streams audio directly into **Telegram voice chats** using unof
 </details>
 
 ---
-
-## Personal Projects
 
 Beyond the bots, I've worked on multiple smaller projects independently — scripts, utilities, and mini-apps built for the purpose of learning, experimenting with new tools, and understanding concepts by actually implementing them. These span across Python, C++, API integration, and cloud deployment.
 
