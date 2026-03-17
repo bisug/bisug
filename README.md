@@ -113,7 +113,7 @@ class BisuG:
 ## GitHub Trophies
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=bisug&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&column=7" width="95%"/>
+  <img src="https://gh-trophy.cdnsoft.net/?username=bisug&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&column=7" width="95%"/>
 </div>
 
 ---
