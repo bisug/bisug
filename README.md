@@ -15,7 +15,7 @@
 <br/>
 
 [![GitHub Followers](https://img.shields.io/github/followers/bisug?label=FOLLOWERS&style=for-the-badge&color=7B68EE&logo=github)](https://github.com/bisug?tab=followers)
-[![GitHub Repositories](https://img.shields.io/github/search/count?q=user:bisug+is:public&label=REPOSITORIES&style=for-the-badge&color=7B68EE&logo=github)](https://github.com/bisug?tab=repositories)
+[![GitHub Repositories](https://img.shields.io/badge/REPOSITORIES-4-7B68EE?style=for-the-badge&logo=github)](https://github.com/bisug?tab=repositories)
 [![Profile Views](https://komarev.com/ghpvc/?username=bisug&color=7B68EE&style=for-the-badge&label=PROFILE+VIEWS)](https://github.com/bisug)
 
 </div>
@@ -121,10 +121,6 @@ class BisuG:
 ## Some of my Personal Projects
 
 Beyond my academic studies, I am building a portfolio of independent projects — ranging from complex Telegram bots and interactive games to automation scripts and utility tools. These projects represent my hands-on experience with backend logic, API integration, and cloud deployment.
-
----
-
-### Major Projects
 
 ---
 
