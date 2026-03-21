@@ -15,7 +15,6 @@
 <br/>
 
 [![GitHub Followers](https://img.shields.io/github/followers/bisug?label=FOLLOWERS&style=for-the-badge&color=7B68EE&logo=github)](https://github.com/bisug?tab=followers)
-[![GitHub Repositories](https://img.shields.io/badge/REPOSITORIES-4-7B68EE?style=for-the-badge&logo=github)](https://github.com/bisug?tab=repositories)
 [![Profile Views](https://komarev.com/ghpvc/?username=bisug&color=7B68EE&style=for-the-badge&label=PROFILE+VIEWS)](https://github.com/bisug)
 
 </div>
@@ -32,34 +31,14 @@ class BisuG:
     portfolio  = "https://bisu.com.np"
 
     education  = {
-        "degree"  : "BCs. (Hons) Cyber Security & Networking Technology",
-        "college" : "Lincoln International College, Nepal",
-        "semester" : "Semster-1",
+        "degree"   : "BCs. (Hons) Cyber Security & Networking Technology",
+        "college"  : "Lincoln International College, Nepal",
+        "semester" : "Semester-1",
     }
 
-    pursuing   = "Cybersecurity"
-    learning   = ["Python", "C++", "AI", "Network Fundamentals", "Cyber Ethics"
-    ]
+    goal       = "Cybersecurity Professional"
+    learning   = ["Python", "C++", "AI", "Network Fundamentals", "Cyber Ethics"]
 ```
-
----
-
-## Education
-
-<table>
-  <tr>
-    <td><b>Institution</b></td>
-    <td><a href="https://licnepal.edu.np/">Lincoln International College</a></td>
-  </tr>
-  <tr>
-    <td><b>Program</b></td>
-    <td><a href="https://licnepal.edu.np/bcs-csnt">BCs. (Hons) Cyber Security &amp; Networking Technology</a></td>
-  </tr>
-  <tr>
-    <td><b>Career Goal</b></td>
-    <td>Cybersecurity Professional</td>
-  </tr>
-</table>
 
 ---
 
@@ -90,9 +69,9 @@ class BisuG:
 
 ---
 
-## GitHub Statistics
-
 <div align="center">
+
+## GitHub Statistics
 
 <img src="https://github-readme-stats.vercel.app/api?username=bisug&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=7B68EE&icon_color=7B68EE&text_color=c9d1d9" height="175"/>
 &nbsp;
@@ -110,10 +89,12 @@ class BisuG:
 
 ---
 
+<div align="center">
+
 ## GitHub Trophies
 
-<div align="center">
-  <img src="https://gh-trophy.cdnsoft.net/?username=bisug&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&column=7" width="95%"/>
+<img src="https://gh-trophy.cdnsoft.net/?username=bisug&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&column=7" width="95%"/>
+
 </div>
 
 ---
@@ -137,51 +118,33 @@ I actively use AI tools throughout my development process — for writing featur
 ![Vercel v0](https://img.shields.io/badge/Vercel_v0-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![Gemini CLI](https://img.shields.io/badge/Gemini_CLI-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
-**API Testing & Experimentation**
-
-![Gemini AI Studio](https://img.shields.io/badge/Gemini_AI_Studio-4285F4?style=for-the-badge&logo=google&logoColor=white)
-
-**How I use them**
-
-```
-Planning & Research -->  All LLMs (Claude, Gemini, ChatGPT, DeepSeek)
-Development         -->  Antigravity + Cursor + GitHub Copilot + Gemini CLI
-Reviews             -->  Google Jules
-Learning            -->  All of the above — asking why, not just what
-```
+---
 
 ## Cybersecurity Path
 
 ![Cybersecurity](https://img.shields.io/badge/Career_Goal-Cybersecurity-red?style=for-the-badge&logo=hackthebox&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Actively_Learning-brightgreen?style=for-the-badge)
-
----
+![TryHackMe](https://img.shields.io/badge/TryHackMe-212C42?style=for-the-badge&logo=tryhackme&logoColor=white)
+![HackTheBox](https://img.shields.io/badge/HackTheBox-111927?style=for-the-badge&logo=hackthebox&logoColor=9FEF00)
 
 ### Foundations
 
 | Domain | Status |
 |--------|--------|
-| Networking & Protocols (TCP/IP, DNS, HTTP) | Learning |
-| Operating Systems & Linux | Learning |
-| Python for Security & Scripting | Learning |
-| C++ & Low-Level Concepts | Learning |
-
----
+| Networking & Protocols (TCP/IP, DNS, HTTP) | 🟡 In Progress |
+| Operating Systems & Linux | 🟡 In Progress |
+| Python for Security & Scripting | 🟡 In Progress |
+| C++ & Low-Level Concepts | 🟡 In Progress |
 
 ### Security Domains
 
 | Domain | Status |
 |--------|--------|
-| Ethical Hacking Concepts | Exploring |
-| CTF Challenges | Exploring |
-| Web Application Security | Exploring |
-| Cryptography Basics | Exploring |
-
+| Ethical Hacking Concepts | 🔵 Exploring |
+| CTF Challenges | 🔵 Exploring |
+| Web Application Security | 🔵 Exploring |
+| Cryptography Basics | 🔵 Exploring |
 ---
-
-> *Early stage — building the foundation one concept at a time.*
----
+> 💡 Check out my **pinned repositories** below to see what I've built.
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=100&section=footer" width="100%"/>
-
-</div>
