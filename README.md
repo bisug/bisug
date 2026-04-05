@@ -178,7 +178,7 @@ class BisuG:
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-bisu.com.np-06b6d4?style=for-the-badge&logo=firefoxbrowser&logoColor=white)](https://bisu.com.np)
 [![GitHub](https://img.shields.io/badge/GitHub-bisug-a78bfa?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bisug)
-[![Instagram](https://img.shields.io/badge/Instagram-oyee.bisu-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/oyee.bisu)
+[![Instagram](https://img.shields.io/badge/Instagram-oyeee.bisu-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/oyeee.bisu)
 [![Gmail](https://img.shields.io/badge/Gmail-bisu.ghlan@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bisu.ghlan@gmail.com)
 
 <br/>
