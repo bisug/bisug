@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Animated Banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Bisu%20Ghalan&fontSize=70&fontColor=ffffff&fontAlignY=50&animation=fadeIn" width="100%"/>
+<img src="./assets/header.svg" width="100%" alt="Bisu Ghalan" />
 
 <!-- Typing SVG -->
 <a href="https://bisu.com.np">
@@ -73,17 +73,24 @@ class BisuG:
 
 ## GitHub Statistics
 
-<img src="https://github-readme-stats.vercel.app/api?username=bisug&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=7B68EE&icon_color=7B68EE&text_color=c9d1d9" height="175"/>
-&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bisug&layout=compact&hide_border=true&bg_color=0d1117&title_color=7B68EE&text_color=c9d1d9" height="175"/>
+| <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=bisug&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=7B68EE&icon_color=7B68EE&text_color=c9d1d9" height="175"/> | <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=bisug&layout=compact&hide_border=true&bg_color=0d1117&title_color=7B68EE&text_color=c9d1d9" height="175"/> |
+| :--- | :--- |
 
-<br/><br/>
+<br/>
 
 <img src="https://streak-stats.demolab.com?user=bisug&hide_border=true&background=0d1117&ring=7B68EE&fire=FF6B6B&currStreakLabel=7B68EE&sideLabels=c9d1d9&dates=c9d1d9&sideNums=ffffff&currStreakNum=ffffff" width="65%"/>
 
-<br/><br/>
+<br/>
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=bisug&bg_color=0d1117&color=7B68EE&line=7B68EE&point=ffffff&area=true&hide_border=true" width="95%"/>
+
+</div>
+
+<div align="center">
+
+## GitHub Trophies
+
+<img src="https://github-profile-repo.vercel.app/?username=bisug&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&column=7" width="95%"/>
 
 </div>
 
@@ -91,26 +98,18 @@ class BisuG:
 
 <div align="center">
 
-## GitHub Trophies
-
-<img src="https://gh-trophy.cdnsoft.net/?username=bisug&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&column=7" width="95%"/>
-
-</div>
-
----
-
 ## AI Tools & Workflow
 
-I actively use AI tools throughout my development process — for writing features, refactoring, debugging, optimizing code, and accelerating learning. All tools used on free tiers.
+<p align="center"><i>I actively use AI tools throughout my development process for writing features, refactoring, debugging, optimizing code, and accelerating learning. All tools used on free tiers.</i></p>
 
-**Conversational AI / LLMs**
+### Conversational AI / LLMs
 
 ![ChatGPT](https://img.shields.io/badge/ChatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
 ![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)
 ![DeepSeek](https://img.shields.io/badge/DeepSeek-4D6BFE?style=for-the-badge&logoColor=white)
 
-**AI-Powered Dev Tools**
+### AI-Powered Dev Tools
 
 ![GitHub Copilot](https://img.shields.io/badge/GitHub_Copilot-000000?style=for-the-badge&logo=github&logoColor=white)
 ![Antigravity](https://img.shields.io/badge/Antigravity-000000?style=for-the-badge&logoColor=white)
@@ -118,7 +117,7 @@ I actively use AI tools throughout my development process — for writing featur
 ![Vercel v0](https://img.shields.io/badge/Vercel_v0-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![Gemini CLI](https://img.shields.io/badge/Gemini_CLI-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
----
+<br/>
 
 ## Cybersecurity Path
 
@@ -127,36 +126,34 @@ I actively use AI tools throughout my development process — for writing featur
 ![TryHackMe](https://img.shields.io/badge/TryHackMe-212C42?style=for-the-badge&logo=tryhackme&logoColor=white)
 ![HackTheBox](https://img.shields.io/badge/HackTheBox-111927?style=for-the-badge&logo=hackthebox&logoColor=9FEF00)
 
-### Foundations
+</div>
 
-| Domain | Status |
-|--------|--------|
-| Networking & Protocols (TCP/IP, DNS, HTTP) | 🟡 In Progress |
-| Operating Systems & Linux | 🟡 In Progress |
-| Python for Security & Scripting | 🟡 In Progress |
-| C++ & Low-Level Concepts | 🟡 In Progress |
+<br/>
 
-### Security Domains
+<div align="center">
 
-| Domain | Status |
-|--------|--------|
-| Ethical Hacking Concepts | 🔵 Exploring |
-| CTF Challenges | 🔵 Exploring |
-| Web Application Security | 🔵 Exploring |
-| Cryptography Basics | 🔵 Exploring |
----
-> 💡 Check out my **pinned repositories** below to see what I've built.
+| Foundations | Security Domains |
+| :--- | :--- |
+| ● Networking & Protocols (TCP/IP, DNS, HTTP) | ○ Ethical Hacking Concepts |
+| ● Operating Systems & Linux | ○ CTF Challenges |
+| ● Python for Security & Scripting | ○ Web Application Security |
+| ● C++ & Low-Level Concepts | ○ Cryptography Basics |
 
-<br clear="both">
+<br/>
 
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bisug/bisug/output/snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bisug/bisug/output/snake.svg" />
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/bisug/bisug/output/snake.svg" />
-  </picture>
-</p>
+> **Note:** Check out my **pinned repositories** below to see what I've built.
 
-###
+<!-- Cybernetic Activity Tracker -->
+<img src="./assets/snake-frame.svg" width="100%" alt="Activity Frame" />
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=100&section=footer" width="100%"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bisug/bisug/output/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bisug/bisug/output/snake.svg" />
+  <img alt="GitHub contribution grid snake animation" src="https://raw.githubusercontent.com/bisug/bisug/output/snake.svg" width="100%" />
+</picture>
+
+<img src="./assets/snake-footer.svg" width="100%" alt="Activity Footer" />
+
+</div>
+
+<img src="./assets/footer.svg" width="100%" alt="Footer Banner" />
