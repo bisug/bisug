@@ -1,26 +1,64 @@
-<svg width="1000" height="30" viewBox="0 0 1000 30" xmlns="http://www.w3.org/2000/svg">
+<svg width="1000" height="36" viewBox="0 0 1000 36" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <style><![CDATA[
-      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-    ]]></style>
-    <linearGradient id="lg" x1="1" y1="0" x2="0" y2="0">
-      <stop offset="0%"   stop-color="#00ffff" stop-opacity="0"/>
-      <stop offset="20%"  stop-color="#00ffff"/>
-      <stop offset="50%"  stop-color="#a78bfa"/>
-      <stop offset="80%"  stop-color="#ff0040"/>
-      <stop offset="100%" stop-color="#ff0040" stop-opacity="0"/>
+
+    <linearGradient id="sf-line2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#06b6d4" stop-opacity="0"/>
+      <stop offset="25%"  stop-color="#06b6d4"/>
+      <stop offset="75%"  stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
     </linearGradient>
+
+    <linearGradient id="sf-bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#080615"/>
+      <stop offset="100%" stop-color="#0a071a"/>
+    </linearGradient>
+
   </defs>
 
-  <!-- Bottom Accent Line -->
-  <rect x="0" y="5" width="1000" height="1.5" fill="url(#lg)" opacity="0.8"/>
-  
-  <!-- Terminal Status -->
-  <g transform="translate(500, 22)" text-anchor="middle" font-family="'Share Tech Mono', monospace" font-size="8" fill="#374151" letter-spacing="2">
-    <text>TERMINAL_SECURE &#9642; DATA_SYNC_COMPLETE &#9642; END_OF_STREAM</text>
-  </g>
+  <!-- Base -->
+  <rect width="1000" height="36" fill="url(#sf-bg2)"/>
 
-  <!-- Corner Ticks -->
-  <path d="M 20 5 L 20 15 M 20 5 L 30 5" fill="none" stroke="#00ffff" stroke-width="1" opacity="0.5"/>
-  <path d="M 980 5 L 980 15 M 980 5 L 970 5" fill="none" stroke="#ff0040" stroke-width="1" opacity="0.5"/>
+  <!-- Top seam line (dim — appears as bottom of snake section) -->
+  <rect x="0" y="0" width="1000" height="1.5" fill="url(#sf-line2)" opacity="0.5"/>
+
+  <!-- Bottom closing rule (strong) -->
+  <rect x="0" y="34" width="1000" height="2" fill="url(#sf-line2)"/>
+
+  <!-- Left tick bracket -->
+  <path d="M 18 8 L 8 8 L 8 28" fill="none" stroke="#06b6d4" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Right tick bracket -->
+  <path d="M 982 8 L 992 8 L 992 28" fill="none" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Animated traveling data dot across the bottom rule -->
+  <circle r="3.5" cy="35" fill="#06b6d4" opacity="0.8">
+    <animate attributeName="cx" values="0;1000;0" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.9;0.9;0.9;0" keyTimes="0;0.02;0.5;0.98;1" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Counter-direction violet dot -->
+  <circle r="2.5" cy="35" fill="#a78bfa" opacity="0.7">
+    <animate attributeName="cx" values="1000;0;1000" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.8;0.8;0.8;0" keyTimes="0;0.02;0.5;0.98;1" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Center status text -->
+  <text x="500" y="22"
+        font-family="'Courier New', Courier, monospace"
+        font-size="8" letter-spacing="3"
+        text-anchor="middle"
+        fill="#475569" opacity="0.85">TERMINAL_SECURE &#9642; DATA_SYNC_OK &#9642; END_OF_STREAM</text>
+
+  <!-- Left label -->
+  <text x="28" y="22"
+        font-family="'Courier New', Courier, monospace"
+        font-size="7" letter-spacing="1"
+        fill="#22d3ee" opacity="0.6">MEM::FLUSH</text>
+
+  <!-- Right label -->
+  <text x="972" y="22"
+        font-family="'Courier New', Courier, monospace"
+        font-size="7" letter-spacing="1"
+        text-anchor="end"
+        fill="#a78bfa" opacity="0.6">STREAM::CLOSE</text>
+
 </svg>
