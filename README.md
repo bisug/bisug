@@ -3,19 +3,18 @@
 <!-- Animated Banner -->
 <img src="./assets/header.svg" width="100%" alt="Bisu Ghalan" />
 
-<!-- Typing SVG -->
-<a href="https://bisu.com.np">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=7B68EE&center=true&vCenter=true&width=600&lines=CS+Student+%40+Lincoln+College+%F0%9F%8E%93;Learning+Python+%26+C%2B%2B+%F0%9F%90%8D;Exploring+Bot+Development+%F0%9F%A4%96;Journey+into+Cybersecurity+%F0%9F%94%90;Always+learning%2C+always+building+%E2%9C%A8" alt="Typing SVG" />
-</a>
+<br/>
+
+<!-- Primary Links -->
+[![Portfolio](https://img.shields.io/badge/Portfolio-bisu.com.np-06b6d4?style=for-the-badge&logo=firefoxbrowser&logoColor=white)](https://bisu.com.np)
+[![GitHub](https://img.shields.io/badge/GitHub-bisug-a78bfa?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bisug)
 
 <br/>
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-bisu.com.np-7B68EE?style=for-the-badge&logo=firefoxbrowser&logoColor=white)](https://bisu.com.np)
-
-<br/>
-
-[![GitHub Followers](https://img.shields.io/github/followers/bisug?label=FOLLOWERS&style=for-the-badge&color=7B68EE&logo=github)](https://github.com/bisug?tab=followers)
-[![Profile Views](https://komarev.com/ghpvc/?username=bisug&color=7B68EE&style=for-the-badge&label=PROFILE+VIEWS)](https://github.com/bisug)
+<!-- Stats Badges -->
+[![GitHub Followers](https://img.shields.io/github/followers/bisug?label=FOLLOWERS&style=for-the-badge&color=7c3aed&logo=github&logoColor=white)](https://github.com/bisug?tab=followers)
+[![GitHub Stars](https://img.shields.io/github/stars/bisug?label=STARS&style=for-the-badge&color=06b6d4&logo=github&logoColor=white)](https://github.com/bisug?tab=repositories)
+[![Profile Views](https://komarev.com/ghpvc/?username=bisug&color=4c1d95&style=for-the-badge&label=PROFILE+VIEWS)](https://github.com/bisug)
 
 </div>
 
@@ -37,8 +36,16 @@ class BisuG:
     }
 
     goal       = "Cybersecurity Professional"
-    learning   = ["Python", "C++", "AI", "Network Fundamentals", "Cyber Ethics"]
+    learning   = ["Python", "C++", "Go", "Network Fundamentals", "Cyber Ethics"]
 ```
+
+---
+
+## Currently Working On
+
+- > Building simple Telegram bots in Python using Pyrogram
+- > Learning Python, C++, Go & other languages as per course requirements
+- > Exploring networking technology fundamentals & packet analysis
 
 ---
 
@@ -48,6 +55,7 @@ class BisuG:
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
 
 **Cloud & Deployment**
 
@@ -61,11 +69,17 @@ class BisuG:
 **Databases & Storage**
 
 ![MongoDB Atlas](https://img.shields.io/badge/MongoDB_Atlas-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![Upstash Redis](https://img.shields.io/badge/Upstash_Redis-00E9A3?style=for-the-badge&logo=redis&logoColor=black)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
 
 **Containerization**
 
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+
+**Tools & Environment**
+
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
 ---
 
@@ -73,16 +87,16 @@ class BisuG:
 
 ## GitHub Statistics
 
-| <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=bisug&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=7B68EE&icon_color=7B68EE&text_color=c9d1d9" height="175"/> | <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=bisug&layout=compact&hide_border=true&bg_color=0d1117&title_color=7B68EE&text_color=c9d1d9" height="175"/> |
+| <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=bisug&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=7c3aed&icon_color=06b6d4&text_color=c9d1d9" height="175"/> | <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=bisug&layout=compact&hide_border=true&bg_color=0d1117&title_color=7c3aed&text_color=c9d1d9" height="175"/> |
 | :--- | :--- |
 
 <br/>
 
-<img src="https://streak-stats.demolab.com?user=bisug&hide_border=true&background=0d1117&ring=7B68EE&fire=FF6B6B&currStreakLabel=7B68EE&sideLabels=c9d1d9&dates=c9d1d9&sideNums=ffffff&currStreakNum=ffffff" width="65%"/>
+<img src="https://streak-stats.demolab.com?user=bisug&hide_border=true&background=0d1117&ring=7c3aed&fire=06b6d4&currStreakLabel=7c3aed&sideLabels=c9d1d9&dates=c9d1d9&sideNums=ffffff&currStreakNum=ffffff" width="65%"/>
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=bisug&bg_color=0d1117&color=7B68EE&line=7B68EE&point=ffffff&area=true&hide_border=true" width="95%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=bisug&bg_color=0d1117&color=7c3aed&line=06b6d4&point=c4b5fd&area=true&hide_border=true" width="95%"/>
 
 </div>
 
@@ -121,8 +135,8 @@ class BisuG:
 
 ## Cybersecurity Path
 
-![Cybersecurity](https://img.shields.io/badge/Career_Goal-Cybersecurity-red?style=for-the-badge&logo=hackthebox&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Actively_Learning-brightgreen?style=for-the-badge)
+![Cybersecurity](https://img.shields.io/badge/Career_Goal-Cybersecurity-7c3aed?style=for-the-badge&logo=hackthebox&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Actively_Learning-06b6d4?style=for-the-badge)
 ![TryHackMe](https://img.shields.io/badge/TryHackMe-212C42?style=for-the-badge&logo=tryhackme&logoColor=white)
 ![HackTheBox](https://img.shields.io/badge/HackTheBox-111927?style=for-the-badge&logo=hackthebox&logoColor=9FEF00)
 
@@ -153,6 +167,23 @@ class BisuG:
 </picture>
 
 <img src="./assets/snake-footer.svg" width="100%" alt="Activity Footer" />
+
+</div>
+
+---
+
+<div align="center">
+
+## ▸ Get In Touch
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-bisu.com.np-06b6d4?style=for-the-badge&logo=firefoxbrowser&logoColor=white)](https://bisu.com.np)
+[![GitHub](https://img.shields.io/badge/GitHub-bisug-a78bfa?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bisug)
+[![Instagram](https://img.shields.io/badge/Instagram-oyee.bisu-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/oyee.bisu)
+[![Gmail](https://img.shields.io/badge/Gmail-bisu.ghlan@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bisu.ghlan@gmail.com)
+
+<br/>
+
+*Open to collaborations, CTF teams and open source contributions.*
 
 </div>
 

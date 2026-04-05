@@ -1,7 +1,7 @@
 <svg width="100%" height="200" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <style><![CDATA[
-      @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Share+Tech+Mono&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Orbitron:wght@700;900&family=Share+Tech+Mono&display=swap');
     ]]></style>
 
     <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
@@ -22,6 +22,13 @@
     <clipPath id="gc1"><rect x="0" y="60" width="1000" height="20"/></clipPath>
     <clipPath id="gc2"><rect x="0" y="88" width="1000" height="15"/></clipPath>
     <clipPath id="gc3"><rect x="0" y="102" width="1000" height="11"/></clipPath>
+
+    <!-- Typing Reveal Masks (15s total cycle, 3s per line) -->
+    <clipPath id="tp1"><rect x="250" y="135" height="30" width="0"><animate attributeName="width" values="0;500;500;0" keyTimes="0;0.1;0.18;0.2" dur="15s" repeatCount="indefinite" /></rect></clipPath>
+    <clipPath id="tp2"><rect x="250" y="135" height="30" width="0"><animate attributeName="width" values="0;0;500;500;0" keyTimes="0;0.2;0.3;0.38;0.4" dur="15s" repeatCount="indefinite" /></rect></clipPath>
+    <clipPath id="tp3"><rect x="250" y="135" height="30" width="0"><animate attributeName="width" values="0;0;500;500;0" keyTimes="0;0.4;0.5;0.58;0.6" dur="15s" repeatCount="indefinite" /></rect></clipPath>
+    <clipPath id="tp4"><rect x="250" y="135" height="30" width="0"><animate attributeName="width" values="0;0;500;500;0" keyTimes="0;0.6;0.7;0.78;0.8" dur="15s" repeatCount="indefinite" /></rect></clipPath>
+    <clipPath id="tp5"><rect x="250" y="135" height="30" width="0"><animate attributeName="width" values="0;0;500;500;0" keyTimes="0;0.8;0.9;0.98;1" dur="15s" repeatCount="indefinite" /></rect></clipPath>
 
     <!-- Text gradient (top-to-bottom white fade) -->
     <linearGradient id="tg" x1="0" y1="0" x2="0" y2="1">
@@ -127,80 +134,131 @@
   <rect x="175" y="36"  width="650" height="1" fill="url(#lg)" opacity="0.5"/>
   <rect x="175" y="164" width="650" height="1" fill="url(#lg)" opacity="0.5"/>
 
-  <!-- ── GLITCH LAYERS (slice-based) ── -->
-  <!-- Slice 1: cyan, top strip -->
+  <!-- ── SCANLINE SWEEPING OVER TITLE ── -->
+  <rect x="160" y="65" width="680" height="2" fill="#06b6d4" opacity="0.07">
+    <animate attributeName="y" values="65;128;65" dur="3s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- ── CHROMATIC ABERRATION: Constant Ghost Layers ── -->
+  <!-- Magenta ghost — offset right, always present, disappears on glitch beats -->
+  <text x="507" y="119"
+    font-family="'Rubik Glitch','Orbitron','Courier New',monospace"
+    font-weight="400" font-size="62" text-anchor="middle" letter-spacing="10"
+    fill="#ff0040" opacity="0.38">
+    BISU GHALAN
+    <animate attributeName="x"
+      values="507;495;510;503;507;508;494;500;507"
+      dur="0.13s" repeatCount="indefinite" calcMode="discrete"/>
+    <animate attributeName="opacity"
+      values="0.38;0.38;0;0.38;0.38;0;0.38;0.38;0.38"
+      dur="2.9s" repeatCount="indefinite" calcMode="discrete"/>
+  </text>
+  <!-- Cyan ghost — offset left, always present -->
+  <text x="493" y="119"
+    font-family="'Rubik Glitch','Orbitron','Courier New',monospace"
+    font-weight="400" font-size="62" text-anchor="middle" letter-spacing="10"
+    fill="#00ffff" opacity="0.38">
+    BISU GHALAN
+    <animate attributeName="x"
+      values="493;505;491;497;493;492;506;500;493"
+      dur="0.13s" repeatCount="indefinite" calcMode="discrete"/>
+    <animate attributeName="opacity"
+      values="0.38;0;0.38;0.38;0;0.38;0.38;0.38;0.38"
+      dur="3.3s" repeatCount="indefinite" calcMode="discrete"/>
+  </text>
+
+  <!-- ── HIGH-INTENSITY SLICE GLITCH ── -->
+  <!-- Top strip — cyan, hard offset -->
   <text x="500" y="119"
-    font-family="'Orbitron','JetBrains Mono','Courier New',monospace"
-    font-weight="900" font-size="62" text-anchor="middle" letter-spacing="10"
-    fill="#00ffff" opacity="0" filter="url(#glow)" clip-path="url(#gc1)">
+    font-family="'Rubik Glitch','Orbitron','Courier New',monospace"
+    font-weight="400" font-size="62" text-anchor="middle" letter-spacing="10"
+    fill="#00ffff" opacity="0" clip-path="url(#gc1)">
     BISU GHALAN
     <animate attributeName="opacity"
-      values="0;0;0;0.75;0;0;0;0;0.55;0;0"
+      values="0;0;0;0.92;0;0;0;0;0.72;0;0"
       keyTimes="0;0.15;0.19;0.21;0.24;0.5;0.68;0.71;0.73;0.76;1"
       dur="7s" repeatCount="indefinite" calcMode="discrete"/>
     <animate attributeName="x"
-      values="500;492;500;500;500;500;500;500;505;500;500"
+      values="500;492;500;500;500;500;500;500;509;500;500"
       keyTimes="0;0.19;0.21;0.24;0.5;0.68;0.71;0.73;0.73;0.76;1"
       dur="7s" repeatCount="indefinite" calcMode="discrete"/>
   </text>
-
-  <!-- Slice 2: magenta, middle strip -->
+  <!-- Middle strip — magenta, hard offset -->
   <text x="500" y="119"
-    font-family="'Orbitron','JetBrains Mono','Courier New',monospace"
-    font-weight="900" font-size="62" text-anchor="middle" letter-spacing="10"
-    fill="#ff0040" opacity="0" filter="url(#glow)" clip-path="url(#gc2)">
+    font-family="'Rubik Glitch','Orbitron','Courier New',monospace"
+    font-weight="400" font-size="62" text-anchor="middle" letter-spacing="10"
+    fill="#ff0040" opacity="0" clip-path="url(#gc2)">
     BISU GHALAN
     <animate attributeName="opacity"
-      values="0;0;0;0;0.65;0;0;0.5;0;0"
+      values="0;0;0;0;0.82;0;0;0.62;0;0"
       keyTimes="0;0.15;0.19;0.21;0.23;0.26;0.7;0.72;0.75;1"
       dur="7s" repeatCount="indefinite" calcMode="discrete"/>
     <animate attributeName="x"
-      values="500;500;500;500;508;500;500;496;500;500"
+      values="500;500;500;500;512;500;500;489;500;500"
       keyTimes="0;0.15;0.19;0.21;0.23;0.26;0.7;0.72;0.75;1"
       dur="7s" repeatCount="indefinite" calcMode="discrete"/>
   </text>
-
-  <!-- Slice 3: cyan, bottom strip -->
+  <!-- Bottom strip — cyan, wide offset -->
   <text x="500" y="119"
-    font-family="'Orbitron','JetBrains Mono','Courier New',monospace"
-    font-weight="900" font-size="62" text-anchor="middle" letter-spacing="10"
+    font-family="'Rubik Glitch','Orbitron','Courier New',monospace"
+    font-weight="400" font-size="62" text-anchor="middle" letter-spacing="10"
     fill="#00ffff" opacity="0" clip-path="url(#gc3)">
     BISU GHALAN
     <animate attributeName="opacity"
-      values="0;0;0;0;0;0.45;0;0;0.3;0;0"
+      values="0;0;0;0;0;0.58;0;0;0.38;0;0"
       keyTimes="0;0.19;0.2;0.21;0.22;0.23;0.26;0.71;0.73;0.76;1"
       dur="7s" repeatCount="indefinite" calcMode="discrete"/>
     <animate attributeName="x"
-      values="500;500;500;500;500;513;500;500;488;500;500"
+      values="500;500;500;500;500;518;500;500;484;500;500"
       keyTimes="0;0.19;0.2;0.21;0.22;0.23;0.26;0.71;0.73;0.76;1"
       dur="7s" repeatCount="indefinite" calcMode="discrete"/>
   </text>
 
-  <!-- ── MAIN TITLE ── -->
-  <text x="500" y="119"
-    font-family="'Orbitron','JetBrains Mono','Courier New',monospace"
-    font-weight="900" font-size="62" text-anchor="middle" letter-spacing="10"
-    fill="url(#tg)">
-    BISU GHALAN
-  </text>
+  <!-- ── MAIN TITLE with occasional translate JUMP ── -->
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+      values="0,0; 0,0; 0,0; 0,0; -8,3; 0,0; 6,-2; 0,0; 0,0; 0,0"
+      keyTimes="0; 0.1; 0.19; 0.195; 0.2; 0.21; 0.68; 0.7; 0.75; 1"
+      dur="7s" repeatCount="indefinite" calcMode="discrete"/>
+    <text x="500" y="119"
+      font-family="'Rubik Glitch','Orbitron','Courier New',monospace"
+      font-weight="400" font-size="62" text-anchor="middle" letter-spacing="10"
+      fill="url(#tg)">
+      BISU GHALAN
+    </text>
+  </g>
 
   <!-- ── DIVIDER LINE UNDER TITLE ── -->
   <rect x="230" y="129" width="540" height="1.5" fill="url(#lg)" opacity="0.75"/>
 
-  <!-- ── SUBTITLE ── -->
-  <text x="497" y="151"
-    font-family="'Share Tech Mono','JetBrains Mono','Fira Code','Courier New',monospace"
-    font-size="12.5" text-anchor="middle" letter-spacing="3.5"
-    fill="#a78bfa" opacity="0.92">
-    &lt; CYBERSECURITY ENTHUSIAST &amp; DEVELOPER /&gt;
-  </text>
-
-  <!-- Blinking cursor -->
-  <text x="758" y="152"
-    font-family="'Share Tech Mono','Courier New',monospace"
-    font-size="13" fill="#00ffff" font-weight="700" opacity="1">
-    _<animate attributeName="opacity" values="1;0;1" dur="0.85s" repeatCount="indefinite" calcMode="discrete"/>
-  </text>
+  <!-- ── TYPING DYNAMIC SUBTITLE ── -->
+  <g font-family="'Share Tech Mono','JetBrains Mono','Fira Code','Courier New',monospace" font-size="12.5" text-anchor="start" letter-spacing="3.5">
+    <!-- Line 1: Cybersecurity Student -->
+    <text x="255" y="151" fill="#a78bfa" opacity="0" clip-path="url(#tp1)">
+      &gt; CYBERSECURITY STUDENT @ LINCOLN COLLEGE <tspan fill="#00ffff" font-weight="700">_</tspan>
+      <animate attributeName="opacity" values="0;1;1;0" dur="15s" keyTimes="0;0.01;0.18;0.2" repeatCount="indefinite" />
+    </text>
+    <!-- Line 2: Ethical Hacking -->
+    <text x="255" y="151" fill="#a78bfa" opacity="0" clip-path="url(#tp2)">
+      &gt; EXPLORING ETHICAL HACKING &amp; CTFs <tspan fill="#00ffff" font-weight="700">_</tspan>
+      <animate attributeName="opacity" values="0;0;1;1;0" dur="15s" keyTimes="0;0.2;0.21;0.38;0.4" repeatCount="indefinite" />
+    </text>
+    <!-- Line 3: Bot Development -->
+    <text x="255" y="151" fill="#a78bfa" opacity="0" clip-path="url(#tp3)">
+      &gt; PYTHON | C++ | BOT DEVELOPMENT <tspan fill="#00ffff" font-weight="700">_</tspan>
+      <animate attributeName="opacity" values="0;0;1;1;0" dur="15s" keyTimes="0;0.4;0.41;0.58;0.6" repeatCount="indefinite" />
+    </text>
+    <!-- Line 4: Pentest -->
+    <text x="255" y="151" fill="#a78bfa" opacity="0" clip-path="url(#tp4)">
+      &gt; PENETRATION TESTING ENTHUSIAST <tspan fill="#00ffff" font-weight="700">_</tspan>
+      <animate attributeName="opacity" values="0;0;1;1;0" dur="15s" keyTimes="0;0.6;0.61;0.78;0.8" repeatCount="indefinite" />
+    </text>
+    <!-- Line 5: Always Learning -->
+    <text x="255" y="151" fill="#a78bfa" opacity="0" clip-path="url(#tp5)">
+      &gt; ALWAYS LEARNING, ALWAYS BUILDING <tspan fill="#00ffff" font-weight="700">_</tspan>
+      <animate attributeName="opacity" values="0;0;1;1;0" dur="15s" keyTimes="0;0.8;0.81;0.98;1" repeatCount="indefinite" />
+    </text>
+  </g>
 
   <!-- ── STATUS BAR ── -->
   <!-- Online dot + label -->
