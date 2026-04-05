@@ -1,5 +1,8 @@
 name: Generate Snake Animation
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 on:
   schedule:
     # Runs daily at 00:00 UTC
