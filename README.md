@@ -92,7 +92,7 @@ class BisuG:
 
 <br/>
 
-<img src="https://streak-stats.demolab.com?user=bisug&hide_border=true&background=0d1117&ring=7c3aed&fire=06b6d4&currStreakLabel=7c3aed&sideLabels=c9d1d9&dates=c9d1d9&sideNums=ffffff&currStreakNum=ffffff" width="65%"/>
+<img src="https://streak-stats.demolab.com/?user=bisug&hide_border=true&background=0d1117&ring=7c3aed&fire=06b6d4&currStreakLabel=7c3aed&sideLabels=c9d1d9&dates=c9d1d9&sideNums=ffffff&currStreakNum=ffffff" width="65%"/>
 
 <br/>
 
