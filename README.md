@@ -147,4 +147,10 @@ I actively use AI tools throughout my development process — for writing featur
 ---
 > 💡 Check out my **pinned repositories** below to see what I've built.
 
+<br clear="both">
+
+<img src="https://raw.githubusercontent.com/bisug/bisug/output/snake.svg" alt="Snake animation" />
+
+###
+
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=100&section=footer" width="100%"/>
