@@ -22,32 +22,40 @@
 
 ## About Me
 
-```python
-class BisuG:
-    name       = "Bisu Ghalan"
-    username   = "bisug"
-    location   = "Nepal"
-    portfolio  = "https://bisu.com.np"
+> ✦ $\color{cyan}{\text{Hi! I'm Bisu.}}$ I am a student aiming for a career in $\color{purple}{\text{Cybersecurity.}}$
 
-    education  = {
-        "degree"   : "BCs. (Hons) Cyber Security & Networking Technology",
-        "college"  : "Lincoln International College, Nepal",
-        "semester" : "Semester-1",
-    }
+```diff
+- bisu@cyber-sec-node:~$ whoami
++ Name       : Bisu Ghalan
++ Username   : bisug
++ Aim       : Cybersecurity Professional
++ Location   : Nepal
++ Portfolio  : https://bisu.com.np
 
-    goal       = "Cybersecurity Professional"
-    learning   = ["Python", "C++", "Go", "Network Fundamentals", "Cyber Ethics"]
+- bisu@cyber-sec-node:~$ cat education.json
++ {
++   "degree"   : "BCs. (Hons) Cyber Security & Networking Technology",
++   "college"  : "Lincoln International College, Nepal",
++   "semester" : "Semester-2"
++ }
+
+- bisu@cyber-sec-node:~$ nmap -sV current_targets.local
++ Starting Nmap ( https://nmap.org )
++ PORT    STATE SERVICE       REASON
++ 22/tcp  open  development   Python, C++, Go
++ 80/tcp  open  networking    Network Fundamentals, Packet Analysis
++ 443/tcp open  cybersec      Ethical Hacking, Cyber Ethics
 ```
 
 ---
 
 ## Currently Working On
 
-- > Building simple Telegram bots in Python using Pyrogram
 - > Learning Python, C++, Go & other languages as per course requirements
 - > Exploring networking technology fundamentals & packet analysis
 
 ---
+
 
 ## Tech Stack
 
@@ -57,19 +65,13 @@ class BisuG:
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
 
-**Cloud & Deployment**
-
-![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
-![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)
-![Koyeb](https://img.shields.io/badge/Koyeb-121212?style=for-the-badge&logo=koyeb&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-
 **Databases & Storage**
 
-![MongoDB Atlas](https://img.shields.io/badge/MongoDB_Atlas-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+
+> *Redis (Concepts) & PostgreSQL (Basics)*
 
 **Containerization**
 
@@ -77,6 +79,7 @@ class BisuG:
 
 **Tools & Environment**
 
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
@@ -112,27 +115,6 @@ class BisuG:
 
 <div align="center">
 
-## AI Tools & Workflow
-
-<p align="center"><i>I actively use AI tools throughout my development process for writing features, refactoring, debugging, optimizing code, and accelerating learning. All tools used on free tiers.</i></p>
-
-### Conversational AI / LLMs
-
-![ChatGPT](https://img.shields.io/badge/ChatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
-![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logoColor=white)
-![Gemini](https://img.shields.io/badge/Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)
-![DeepSeek](https://img.shields.io/badge/DeepSeek-4D6BFE?style=for-the-badge&logoColor=white)
-
-### AI-Powered Dev Tools
-
-![GitHub Copilot](https://img.shields.io/badge/GitHub_Copilot-000000?style=for-the-badge&logo=github&logoColor=white)
-![Antigravity](https://img.shields.io/badge/Antigravity-000000?style=for-the-badge&logoColor=white)
-![Cursor](https://img.shields.io/badge/Cursor-000000?style=for-the-badge&logoColor=white)
-![Vercel v0](https://img.shields.io/badge/Vercel_v0-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![Gemini CLI](https://img.shields.io/badge/Gemini_CLI-4285F4?style=for-the-badge&logo=google&logoColor=white)
-
-<br/>
-
 ## Cybersecurity Path
 
 ![Cybersecurity](https://img.shields.io/badge/Career_Goal-Cybersecurity-7c3aed?style=for-the-badge&logo=hackthebox&logoColor=white)
@@ -146,12 +128,22 @@ class BisuG:
 
 <div align="center">
 
-| Foundations | Security Domains |
-| :--- | :--- |
-| ● Networking & Protocols (TCP/IP, DNS, HTTP) | ○ Ethical Hacking Concepts |
-| ● Operating Systems & Linux | ○ CTF Challenges |
-| ● Python for Security & Scripting | ○ Web Application Security |
-| ● C++ & Low-Level Concepts | ○ Cryptography Basics |
+```diff
+root@cyber-sec-node:~/learning# cat current_focus.txt
+
++ [>] CORE CONCEPTS
+    - Networking Fundamentals (OSI, TCP/IP, Routing)
+    - Core Programming & Logic Concepts
+
++ [>] PRACTICAL LABS & TOOLS
+    - Cisco Packet Tracer (Network Simulation)
+    - Wireshark (Packet Analysis & Sniffing)
+    - HackTheBox (CTFs & Practical Application)
+
++ [>] SELF-STUDY & RESEARCH
+    - Exploring basic scripting tutorials online
+    - Gathering knowledge & building foundations
+```
 
 <br/>
 
@@ -177,13 +169,13 @@ class BisuG:
 ## ▸ Get In Touch
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-bisu.com.np-06b6d4?style=for-the-badge&logo=firefoxbrowser&logoColor=white)](https://bisu.com.np)
-[![GitHub](https://img.shields.io/badge/GitHub-bisug-a78bfa?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bisug)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Bisu_Ghalan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/bisu-ghalan)
 [![Instagram](https://img.shields.io/badge/Instagram-oyeee.bisu-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/oyeee.bisu)
-[![Gmail](https://img.shields.io/badge/Gmail-bisu.ghlan@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bisu.ghlan@gmail.com)
+[![Gmail](https://img.shields.io/badge/Gmail-bisu.ghalan@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bisu.ghalan@gmail.com)
 
 <br/>
 
-*Open to collaborations, CTF teams and open source contributions.*
+*Always open to discussing networking concepts, teaming up for HTB/CTFs, and contributing to open-source or Telegram-related projects!*
 
 </div>
 
