@@ -22,19 +22,19 @@
 
 ## About Me
 
-> ✦ $\color{cyan}{\text{Hi! I'm Bisu.}}$ I am a student aiming for a career in $\color{purple}{\text{Cybersecurity.}}$
+> ✦ <span style="color:#06b6d4">Hi! I'm Bisu.</span> I am a student aiming for a career in <span style="color:#7c3aed">Cybersecurity.</span>
 
 ```diff
 - bisu@cyber-sec-node:~$ whoami
 + Name       : Bisu Ghalan
 + Username   : bisug
-+ Aim       : Cybersecurity Professional
++ Aim        : Cybersecurity Professional
 + Location   : Nepal
 + Portfolio  : https://bisu.com.np
 
 - bisu@cyber-sec-node:~$ cat education.json
 + {
-+   "degree"   : "BCs. (Hons) Cyber Security & Networking Technology",
++   "degree"   : "BSc (Hons) Cyber Security & Networking Technology",
 +   "college"  : "Lincoln International College, Nepal",
 +   "semester" : "Semester-2"
 + }
@@ -90,7 +90,7 @@
 
 ## GitHub Statistics
 
-| <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=bisug&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=7c3aed&icon_color=06b6d4&text_color=c9d1d9" height="175"/> | <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=bisug&layout=compact&hide_border=true&bg_color=0d1117&title_color=7c3aed&text_color=c9d1d9" height="175"/> |
+| <img src="https://github-readme-stats.vercel.app/api?username=bisug&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=7c3aed&icon_color=06b6d4&text_color=c9d1d9" height="175"/> | <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bisug&layout=compact&hide_border=true&bg_color=0d1117&title_color=7c3aed&text_color=c9d1d9" height="175"/> |
 | :--- | :--- |
 
 <br/>
@@ -146,8 +146,6 @@ root@cyber-sec-node:~/learning# cat current_focus.txt
 ```
 
 <br/>
-
-> **Note:** Check out my **pinned repositories** below to see what I've built.
 
 <!-- Cybernetic Activity Tracker -->
 <img src="./assets/snake-frame.svg" width="100%" alt="Activity Frame" />

@@ -30,18 +30,19 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
       - name: Generate snake SVGs
-        uses: Platane/snk@v3
+        uses: Platane/snk@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          # color_dots maps contribution levels empty -> most; first color = empty cell
           outputs: |
-            dist/snake.svg?color_snake=#06b6d4&color_dots=#0f0b1f,#2e1065,#4c1d95,#7c3aed,#c4b5fd
-            dist/snake-dark.svg?color_snake=#06b6d4&color_dots=#080615,#1e1040,#3b1fa0,#6d28d9,#a78bfa
+            dist/snake.svg?color_snake=#06b6d4&color_dots=#f1f5f9,#ddd6fe,#c4b5fd,#a78bfa,#7c3aed&color_dot_border=#ffffff
+            dist/snake-dark.svg?color_snake=#06b6d4&color_dots=#080615,#1e1040,#3b1fa0,#6d28d9,#a78bfa&color_dot_border=#1e1040
 
       - name: Push snake SVGs to output branch
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453 # v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: output
