@@ -6,7 +6,7 @@
 <br/>
 
 <!-- Typing Animation -->
-<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&pause=1000&color=7C3AED&center=true&vCenter=true&width=500&lines=Cybersecurity+Student;Ethical+Hacking+%26+CTFs;Network+Fundamentals;Python+%26+TypeScript" alt="Typing SVG" />
+<img src="https://raw.githubusercontent.com/bisug/bisug/output/typing.svg" alt="Typing SVG" />
 
 <br/>
 
@@ -96,16 +96,16 @@
 
 ## GitHub Statistics
 
-| <img src="https://github-stats-extended.vercel.app/api?username=bisug&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=7c3aed&icon_color=06b6d4&text_color=c9d1d9" height="175"/> | <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=bisug&layout=compact&hide_border=true&bg_color=0d1117&title_color=7c3aed&text_color=c9d1d9" height="175"/> |
+| <img src="https://raw.githubusercontent.com/bisug/bisug/output/stats.svg" height="175"/> | <img src="https://raw.githubusercontent.com/bisug/bisug/output/top-langs.svg" height="175"/> |
 | :--- | :--- |
 
 <br/>
 
-<img src="https://streak-stats.demolab.com/?user=bisug&hide_border=true&background=0d1117&ring=7c3aed&fire=06b6d4&currStreakLabel=7c3aed&sideLabels=c9d1d9&dates=c9d1d9&sideNums=ffffff&currStreakNum=ffffff" width="65%"/>
+<img src="https://raw.githubusercontent.com/bisug/bisug/output/streak.svg" width="65%"/>
 
 <br/>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=bisug&theme=github_dark" width="95%"/>
+<img src="https://raw.githubusercontent.com/bisug/bisug/output/profile-summary-card-output/github_dark/0-profile-details.svg" width="95%"/>
 
 </div>
 
@@ -113,7 +113,7 @@
 
 ## GitHub Trophies
 
-<img src="https://github-profile-trophy-orcin-eta.vercel.app/?username=bisug&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&column=7" width="95%"/>
+<img src="https://raw.githubusercontent.com/bisug/bisug/output/trophy.svg" width="95%"/>
 
 </div>
 

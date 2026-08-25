@@ -1,0 +1,98 @@
+name: Generate README Cards
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+on:
+  schedule:
+    # Runs daily at 00:00 UTC
+    - cron: "0 0 * * *"
+
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+
+# Cancel any in-progress run for the same ref
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    name: Generate static cards
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Generate stats card
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=7c3aed&icon_color=06b6d4&text_color=c9d1d9
+          path: dist/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&hide_border=true&bg_color=0d1117&title_color=7c3aed&text_color=c9d1d9
+          path: dist/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate streak stats card
+        uses: DenverCoder1/github-readme-streak-stats@51cfb8879073b4c016ce6286016de0b14d179077 # v1.7.0
+        with:
+          options: user=${{ github.repository_owner }}&hide_border=true&background=0d1117&ring=7c3aed&fire=06b6d4&currStreakLabel=7c3aed&sideLabels=c9d1d9&dates=c9d1d9&sideNums=ffffff&currStreakNum=ffffff&disable_animations=true
+          path: dist/streak.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate trophy card
+        uses: denoland/setup-deno@22d081ff2d3a40755e97629de92e3bcbfa7cf2ed # v2.0.5
+        with:
+          deno-version: v2.x
+
+      - name: Render trophy SVG
+        run: |
+          deno run --allow-net --allow-env --allow-read --allow-write \
+            https://raw.githubusercontent.com/ryo-ma/github-profile-trophy/master/render_svg.ts \
+            ${{ github.repository_owner }} dist/trophy.svg darkhub
+        env:
+          GITHUB_TOKEN1: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN2: ${{ secrets.GITHUB_TOKEN }}
+
+      # Fetch the typing SVG once and commit it: the animation is embedded in
+      # the SVG markup, so the static copy keeps animating on GitHub.
+      - name: Save typing SVG
+        run: |
+          mkdir -p dist
+          curl -fsSL "https://readme-typing-svg.demolab.com/?font=Fira+Code&pause=1000&color=7C3AED&center=true&vCenter=true&width=500&lines=Cybersecurity+Student;Ethical+Hacking+%26+CTFs;Network+Fundamentals;Python+%26+TypeScript" -o dist/typing.svg
+
+      # Profile summary cards: generates profile-summary-card-output/ and pushes
+      # it to the output branch itself (single, self-contained push).
+      - name: Generate profile summary cards
+        uses: vn7n24fzkq/github-profile-summary-cards@d9632798b299e9ad6940449a859c30742eb5b549 # v0.12.0
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          BRANCH_NAME: output
+          THEME: github_dark
+          AUTO_PUSH: true
+
+      - name: Push cards to output branch
+        uses: peaceiris/actions-gh-pages@1ef5a1b1df4c63fe21a2242edbee6cac921ece01 # v4.1.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: output
+          publish_dir: ./dist
+          keep_files: true
+          commit_message: "chore: update README cards [skip ci]"
+          user_name: github-actions[bot]
+          user_email: github-actions[bot]@users.noreply.github.com
