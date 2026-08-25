@@ -42,7 +42,7 @@
 - bisu@cyber-sec-node:~$ nmap -sV current_targets.local
 + Starting Nmap ( https://nmap.org )
 + PORT    STATE SERVICE       REASON
-+ 22/tcp  open  development   Python, C++, Go
++ 22/tcp  open  development   Python, C++, Go, TypeScript
 + 80/tcp  open  networking    Network Fundamentals, Packet Analysis
 + 443/tcp open  cybersec      Ethical Hacking, Cyber Ethics
 ```
@@ -51,8 +51,8 @@
 
 ## Currently Working On
 
-- > Learning Python, C++, Go & other languages as per course requirements
-- > Exploring networking technology fundamentals & packet analysis
+- Learning Python, C++, Go, TypeScript & other languages as per course requirements
+- Exploring networking technology fundamentals & packet analysis
 
 ---
 
@@ -107,7 +107,7 @@
 
 ## GitHub Trophies
 
-<img src="https://github-profile-repo.vercel.app/?username=bisug&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&column=7" width="95%"/>
+<img src="https://github-profile-trophy.vercel.app/?username=bisug&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&column=7" width="95%"/>
 
 </div>
 
@@ -121,6 +121,11 @@
 ![Status](https://img.shields.io/badge/Status-Actively_Learning-06b6d4?style=for-the-badge)
 ![TryHackMe](https://img.shields.io/badge/TryHackMe-212C42?style=for-the-badge&logo=tryhackme&logoColor=white)
 ![HackTheBox](https://img.shields.io/badge/HackTheBox-111927?style=for-the-badge&logo=hackthebox&logoColor=9FEF00)
+![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
+![Cisco](https://img.shields.io/badge/Cisco-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
+![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
+![Nmap](https://img.shields.io/badge/Nmap-00457C?style=for-the-badge&logo=nmap&logoColor=white)
+![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white)
 
 </div>
 
@@ -133,7 +138,8 @@ root@cyber-sec-node:~/learning# cat current_focus.txt
 
 + [>] CORE CONCEPTS
     - Networking Fundamentals (OSI, TCP/IP, Routing)
-    - Core Programming & Logic Concepts
+    - Core Programming & Logic Concepts (Python, C++, Go, TypeScript)
+    - Virtualization & Lab Setup (VMware)
 
 + [>] PRACTICAL LABS & TOOLS
     - Cisco Packet Tracer (Network Simulation)
