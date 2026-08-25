@@ -91,16 +91,12 @@
 
 ## GitHub Statistics
 
-| <img src="https://github-readme-stats.vercel.app/api?username=bisug&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=7c3aed&icon_color=06b6d4&text_color=c9d1d9" height="175"/> | <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bisug&layout=compact&hide_border=true&bg_color=0d1117&title_color=7c3aed&text_color=c9d1d9" height="175"/> |
+| <img src="https://github-stats-extended.vercel.app/api?username=bisug&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=7c3aed&icon_color=06b6d4&text_color=c9d1d9" height="175"/> | <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=bisug&layout=compact&hide_border=true&bg_color=0d1117&title_color=7c3aed&text_color=c9d1d9" height="175"/> |
 | :--- | :--- |
 
 <br/>
 
 <img src="https://streak-stats.demolab.com/?user=bisug&hide_border=true&background=0d1117&ring=7c3aed&fire=06b6d4&currStreakLabel=7c3aed&sideLabels=c9d1d9&dates=c9d1d9&sideNums=ffffff&currStreakNum=ffffff" width="65%"/>
-
-<br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=bisug&bg_color=0d1117&color=7c3aed&line=06b6d4&point=c4b5fd&area=true&hide_border=true" width="95%"/>
 
 </div>
 
@@ -108,7 +104,7 @@
 
 ## GitHub Trophies
 
-<img src="https://github-profile-trophy.vercel.app/?username=bisug&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&column=7" width="95%"/>
+<img src="https://github-profile-trophy-orcin-eta.vercel.app/?username=bisug&theme=darkhub&no-frame=true&no-bg=true&margin-w=6&column=7" width="95%"/>
 
 </div>
 
