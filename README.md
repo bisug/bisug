@@ -5,6 +5,11 @@
 
 <br/>
 
+<!-- Typing Animation -->
+<img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&pause=1000&color=7C3AED&center=true&vCenter=true&width=500&lines=Cybersecurity+Student;Ethical+Hacking+%26+CTFs;Network+Fundamentals;Python+%26+TypeScript" alt="Typing SVG" />
+
+<br/>
+
 <!-- Primary Links -->
 [![Portfolio](https://img.shields.io/badge/Portfolio-bisu.com.np-06b6d4?style=for-the-badge&logo=firefoxbrowser&logoColor=white)](https://bisu.com.np)
 [![GitHub](https://img.shields.io/badge/GitHub-bisug-a78bfa?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bisug)
@@ -97,6 +102,10 @@
 <br/>
 
 <img src="https://streak-stats.demolab.com/?user=bisug&hide_border=true&background=0d1117&ring=7c3aed&fire=06b6d4&currStreakLabel=7c3aed&sideLabels=c9d1d9&dates=c9d1d9&sideNums=ffffff&currStreakNum=ffffff" width="65%"/>
+
+<br/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=bisug&theme=github_dark" width="95%"/>
 
 </div>
 
