@@ -192,15 +192,16 @@ root@cyber-sec-node:~/learning# cat current_focus.txt
 <br/>
 
 <!-- Cybernetic Activity Tracker -->
-<img src="./assets/snake-frame.svg" width="100%" alt="Activity Frame" />
+<img src="./assets/activity-frame.svg" width="100%" alt="Activity Frame" />
 
+<!-- Pac-Man -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bisug/bisug/output/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bisug/bisug/output/snake.svg" />
-  <img alt="GitHub contribution grid snake animation" src="https://raw.githubusercontent.com/bisug/bisug/output/snake.svg" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bisug/bisug/output/pacman-contribution-graph-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bisug/bisug/output/pacman-contribution-graph.svg" />
+  <img alt="Pac-Man contribution graph" src="https://raw.githubusercontent.com/bisug/bisug/output/pacman-contribution-graph.svg" width="100%" />
 </picture>
 
-<img src="./assets/snake-footer.svg" width="100%" alt="Activity Footer" />
+<img src="./assets/activity-footer.svg" width="100%" alt="Activity Footer" />
 
 </div>
 

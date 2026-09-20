@@ -18,7 +18,7 @@
   <!-- Base -->
   <rect width="1000" height="36" fill="url(#sf-bg2)"/>
 
-  <!-- Top seam line (dim — appears as bottom of snake section) -->
+  <!-- Top seam line (dim — appears as bottom of pacman section) -->
   <rect x="0" y="0" width="1000" height="1.5" fill="url(#sf-line2)" opacity="0.5"/>
 
   <!-- Bottom closing rule (strong) -->

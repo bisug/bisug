@@ -1,0 +1,58 @@
+name: Generate Arcade Contribution Graph
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+on:
+  schedule:
+    # Runs daily at 00:30 UTC (cards run at 00:00; shared
+    # concurrency group serializes pushes to the output branch)
+    - cron: "30 0 * * *"
+
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+
+# Shared with cards.yml: both push to the output branch, so serialize
+# instead of racing. cancel-in-progress is false so a run never cancels
+# the other workflow's in-flight push (which would lose data).
+concurrency:
+  group: output-branch-push
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    name: Generate arcade contribution SVGs
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Generate Pac-Man SVGs (authentic AI, natural gameplay)
+        uses: abozanona/pacman-contribution-graph@7332e1de7903ab780c3692a4127a59cc13872daa # v1.1.8 2026-08-01
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Pac-Man only. Opportunistic = greedy-but-smart: clears loose
+          # pellets first (high score rate), detours for power pellets
+          # when ghosts close in, plays frightened mode for ghost combos.
+          # Aggressive = shortest-path to nearest dot (fast, low score);
+          # conservative = avoids all risk (slow, timid). Opportunistic
+          # looks most like a real player: efficient yet daring.
+          player_style: "opportunistic"
+          games: "pacman"
+
+      - name: Push SVGs to output branch
+        uses: peaceiris/actions-gh-pages@1ef5a1b1df4c63fe21a2242edbee6cac921ece01 # v4.1.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: output
+          publish_dir: ./dist
+          keep_files: true
+          commit_message: "chore: update pacman contribution graph [skip ci]"
+          user_name: github-actions[bot]
+          user_email: github-actions[bot]@users.noreply.github.com

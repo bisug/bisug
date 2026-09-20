@@ -5,7 +5,7 @@ env:
 
 on:
   schedule:
-    # Runs daily at 00:00 UTC (snake runs at 00:30; shared
+    # Runs daily at 00:00 UTC (pacman runs at 00:30; shared
     # concurrency group serializes pushes to the output branch)
     - cron: "0 0 * * *"
 
@@ -15,9 +15,9 @@ on:
     branches:
       - main
 
-# Shared with snake.yml: both push to the output branch, so serialize
+# Shared with pacman.yml: both push to the output branch, so serialize
 # instead of racing. cancel-in-progress is false so a run never cancels
-# the other workflow's in-flight push (which would lose cards or snake).
+# the other workflow's in-flight push (which would lose cards or pacman).
 concurrency:
   group: output-branch-push
   cancel-in-progress: false
