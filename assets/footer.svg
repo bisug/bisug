@@ -26,6 +26,13 @@
         stroke: #1a1a1a;
         stroke-width: 1.5;
       }
+      /* Dark-mode (GitHub): near-black strokes vanish on dark
+         backgrounds, so switch to a light stroke. */
+      @media (prefers-color-scheme: dark) {
+        .sketch, .sketch-light { stroke: #e5e5e5; }
+        .node, .node-light { fill: #0d1117; stroke: #e5e5e5; }
+        circle[fill="#1a1a1a"] { fill: #e5e5e5; }
+      }
     </style>
   </defs>
 

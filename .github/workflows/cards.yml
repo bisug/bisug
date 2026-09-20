@@ -5,7 +5,8 @@ env:
 
 on:
   schedule:
-    # Runs daily at 00:00 UTC
+    # Runs daily at 00:00 UTC (snake runs at 00:30; shared
+    # concurrency group serializes pushes to the output branch)
     - cron: "0 0 * * *"
 
   workflow_dispatch:
@@ -14,10 +15,12 @@ on:
     branches:
       - main
 
-# Cancel any in-progress run for the same ref
+# Shared with snake.yml: both push to the output branch, so serialize
+# instead of racing. cancel-in-progress is false so a run never cancels
+# the other workflow's in-flight push (which would lose cards or snake).
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  group: output-branch-push
+  cancel-in-progress: false
 
 jobs:
   generate:
@@ -61,9 +64,10 @@ jobs:
           deno-version: v2.x
 
       - name: Render trophy SVG
+        continue-on-error: true
         run: |
           deno run --allow-net --allow-env --allow-read --allow-write \
-            https://raw.githubusercontent.com/ryo-ma/github-profile-trophy/master/render_svg.ts \
+            https://raw.githubusercontent.com/ryo-ma/github-profile-trophy/e3c89df995e92e67cdd4b2acaab9d974583dc1f7/render_svg.ts \
             ${{ github.repository_owner }} dist/trophy.svg darkhub
         env:
           GITHUB_TOKEN1: ${{ secrets.GITHUB_TOKEN }}
@@ -71,16 +75,27 @@ jobs:
 
       # Fetch the typing SVG once and commit it: the animation is embedded in
       # the SVG markup, so the static copy keeps animating on GitHub.
+      # Non-blocking: keep the previous copy on failure so one flaky
+      # third-party service can't wipe out all cards.
       - name: Save typing SVG
+        continue-on-error: true
         run: |
           mkdir -p dist
-          curl -fsSL "https://readme-typing-svg.demolab.com/?font=Fira+Code&pause=1000&color=7C3AED&center=true&vCenter=true&width=500&lines=Cybersecurity+Student;Ethical+Hacking+%26+CTFs;Network+Fundamentals;Python+%26+TypeScript" -o dist/typing.svg
+          curl -fsSL "https://readme-typing-svg.demolab.com/?font=Fira+Code&pause=1000&color=7C3AED&center=true&vCenter=true&width=500&lines=Cybersecurity+Student;Ethical+Hacking+%26+CTFs;Network+Fundamentals;Python+%26+TypeScript" -o dist/typing.svg.tmp
+          if [ -s dist/typing.svg.tmp ] && head -c 100 dist/typing.svg.tmp | grep -q "<svg"; then
+            mv dist/typing.svg.tmp dist/typing.svg
+          else
+            echo "::warning::typing SVG fetch failed or invalid; keeping previous copy"
+            rm -f dist/typing.svg.tmp
+            exit 1
+          fi
 
       # Profile summary cards: generate into the workspace, then copy into
       # ./dist so the single peaceiris step below pushes everything to the
       # output branch together. AUTO_PUSH is disabled to avoid a second,
       # conflicting push targeting the wrong branch.
       - name: Generate profile summary cards
+        continue-on-error: true
         uses: vn7n24fzkq/github-profile-summary-cards@d9632798b299e9ad6940449a859c30742eb5b549 # v0.12.0
         with:
           USERNAME: ${{ github.repository_owner }}
@@ -90,9 +105,15 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Merge summary cards into dist
+        continue-on-error: true
         run: |
-          rm -rf dist/profile-summary-card-output
-          cp -r profile-summary-card-output ./dist/profile-summary-card-output
+          if [ -d profile-summary-card-output ]; then
+            rm -rf dist/profile-summary-card-output
+            cp -r profile-summary-card-output ./dist/profile-summary-card-output
+          else
+            echo "::warning::profile-summary-card-output missing (rate-limit or upstream change); keeping previous copy"
+            exit 1
+          fi
 
       - name: Push cards to output branch
         uses: peaceiris/actions-gh-pages@1ef5a1b1df4c63fe21a2242edbee6cac921ece01 # v4.1.0

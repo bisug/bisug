@@ -5,8 +5,9 @@ env:
 
 on:
   schedule:
-    # Runs daily at 00:00 UTC
-    - cron: "0 0 * * *"
+    # Runs daily at 00:30 UTC (cards run at 00:00; shared
+    # concurrency group serializes pushes to the output branch)
+    - cron: "30 0 * * *"
 
   workflow_dispatch:
 
@@ -14,10 +15,12 @@ on:
     branches:
       - main
 
-# Cancel any in-progress run for the same ref
+# Shared with cards.yml: both push to the output branch, so serialize
+# instead of racing. cancel-in-progress is false so a run never cancels
+# the other workflow's in-flight push (which would lose cards or snake).
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  group: output-branch-push
+  cancel-in-progress: false
 
 jobs:
   generate:
