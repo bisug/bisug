@@ -36,6 +36,7 @@
 + Aim        : Cybersecurity Professional
 + Location   : Nepal
 + Portfolio  : https://bisu.com.np
++ Daily OS   : Linux Mint
 
 - bisu@cyber-sec-node:~$ cat education.json
 + {
@@ -86,9 +87,30 @@
 **Tools & Environment**
 
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Linux Mint](https://img.shields.io/badge/Linux_Mint-87CF3E?style=for-the-badge&logo=linuxmint&logoColor=white)
+![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+![VMware](https://img.shields.io/badge/VMware-607078?style=for-the-badge&logo=vmware&logoColor=white)
+
+---
+
+---
+
+## Security Toolbox & Lab
+
+| Tool | What I use it for |
+| :--- | :--- |
+| **Linux Mint** | Daily driver — coding, coursework, notes |
+| **Kali Linux (VMware)** | Isolated offensive-security labs & tooling playground |
+| **Wireshark** | Packet capture & protocol analysis (TCP/IP, DNS, HTTP) |
+| **Nmap** | Host discovery, port scanning, service detection |
+| **Burp Suite (Community)** | Learning web request inspection & proxy basics |
+| **Cisco Packet Tracer** | Network topologies, routing & switching practice |
+| **VMware / VirtualBox** | Virtualized lab environments, snapshots before experiments |
+| **Git & GitHub** | Version control for coursework, labs & this profile |
+| **Docker (learning)** | Running isolated services & lab containers |
 
 ---
 
@@ -106,6 +128,16 @@
 <br/>
 
 <img src="https://raw.githubusercontent.com/bisug/bisug/output/profile-summary-card-output/github_dark/0-profile-details.svg" width="95%"/>
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/bisug/bisug/output/profile-summary-card-output/github_dark/1-repos-per-language.svg" width="47%"/>
+<img src="https://raw.githubusercontent.com/bisug/bisug/output/profile-summary-card-output/github_dark/2-most-commit-language.svg" width="47%"/>
+
+<br/>
+
+<img src="https://raw.githubusercontent.com/bisug/bisug/output/profile-summary-card-output/github_dark/3-stats.svg" width="47%"/>
+<img src="https://raw.githubusercontent.com/bisug/bisug/output/profile-summary-card-output/github_dark/4-productive-time.svg" width="47%"/>
 
 </div>
 
