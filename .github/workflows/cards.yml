@@ -110,6 +110,15 @@ jobs:
           if [ -d profile-summary-card-output ]; then
             rm -rf dist/profile-summary-card-output
             cp -r profile-summary-card-output ./dist/profile-summary-card-output
+            # Prune generated files nothing references (README uses only
+            # 0-profile-details.svg) so the output branch stays lean.
+            rm -rf \
+              dist/profile-summary-card-output/README.md \
+              dist/profile-summary-card-output/github_dark/README.md \
+              dist/profile-summary-card-output/github_dark/1-repos-per-language.svg \
+              dist/profile-summary-card-output/github_dark/2-most-commit-language.svg \
+              dist/profile-summary-card-output/github_dark/3-stats.svg \
+              dist/profile-summary-card-output/github_dark/4-productive-time.svg
           else
             echo "::warning::profile-summary-card-output missing (rate-limit or upstream change); keeping previous copy"
             exit 1
