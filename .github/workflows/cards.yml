@@ -39,7 +39,7 @@ jobs:
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&bg_color=0d1117&title_color=7c3aed&icon_color=06b6d4&text_color=c9d1d9
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&theme=github_dark&show=prs_merged,prs_merged_percentage
           path: dist/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -47,14 +47,14 @@ jobs:
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&layout=compact&hide_border=true&bg_color=0d1117&title_color=7c3aed&text_color=c9d1d9
+          options: username=${{ github.repository_owner }}&layout=donut&hide_border=true&theme=github_dark&langs_count=6
           path: dist/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate streak stats card
         uses: DenverCoder1/github-readme-streak-stats@51cfb8879073b4c016ce6286016de0b14d179077 # v1.7.0
         with:
-          options: user=${{ github.repository_owner }}&hide_border=true&background=0d1117&ring=7c3aed&fire=06b6d4&currStreakLabel=7c3aed&sideLabels=c9d1d9&dates=c9d1d9&sideNums=ffffff&currStreakNum=ffffff&disable_animations=true
+          options: user=${{ github.repository_owner }}&hide_border=true&theme=github_dark&disable_animations=true
           path: dist/streak.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
