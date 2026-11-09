@@ -23,7 +23,7 @@
 
 ## About Me
 
-> ✦ <span style="color:#06b6d4">Hi! I'm Bisu.</span> I am a student aiming for a career in <span style="color:#7c3aed">Cybersecurity.</span>
+> ✦ <span style="color:#06b6d4">Hi, I'm Bisu.</span> I study Cyber Security & Networking Technology at Lincoln International College, Nepal, and I'm working toward a career in <span style="color:#7c3aed">cybersecurity.</span>
 
 ```diff
 - bisu@cyber-sec-node:~$ whoami
@@ -53,8 +53,8 @@
 
 ## Currently Working On
 
-- Learning Python, C++, Go, TypeScript & other languages as per course requirements
-- Exploring networking technology fundamentals & packet analysis
+- Studying Python, C++, Go, and TypeScript
+- Working through networking fundamentals (OSI, TCP/IP, routing) and packet analysis with Wireshark
 
 ---
 
@@ -74,7 +74,7 @@
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 
-> *Redis (Concepts) & PostgreSQL (Basics)*
+> *Redis: concepts. PostgreSQL: basics.*
 
 **Containerization**
 
@@ -95,11 +95,11 @@
 
 | Tool | What I use it for |
 | :--- | :--- |
-| **Linux Mint** | Daily driver — coding, coursework, notes |
-| **Kali Linux (VMware)** | Isolated offensive-security labs & tooling playground |
+| **Linux Mint** | Daily driver for coding, coursework, and notes |
+| **Kali Linux (VMware)** | Isolated labs for offensive security practice |
 | **Wireshark** | Packet capture & protocol analysis (TCP/IP, DNS, HTTP) |
 | **Nmap** | Host discovery, port scanning, service detection |
-| **Burp Suite (Community)** | Learning web request inspection & proxy basics |
+| **Burp Suite (Community)** | Inspecting web requests and proxy traffic |
 | **Cisco Packet Tracer** | Network topologies, routing & switching practice |
 | **VMware** | Virtualized lab environments, snapshots before experiments |
 | **Git & GitHub** | Version control for coursework, labs & this profile |
@@ -176,8 +176,8 @@ root@cyber-sec-node:~/learning# cat current_focus.txt
     - HackTheBox (CTFs & Practical Application)
 
 + [>] SELF-STUDY & RESEARCH
-    - Exploring basic scripting tutorials online
-    - Gathering knowledge & building foundations
+    - Working through scripting tutorials
+    - Building foundations in networking and programming
 ```
 
 <br/>
@@ -207,7 +207,7 @@ root@cyber-sec-node:~/learning# cat current_focus.txt
 
 <br/>
 
-*Always open to discussing networking concepts, teaming up for HTB/CTFs, and contributing to open-source projects!*
+*Open to talking networking, teaming up for HackTheBox/CTFs, or contributing to open-source projects.*
 
 </div>
 
