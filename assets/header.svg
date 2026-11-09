@@ -258,14 +258,14 @@
       &gt; EXPLORING ETHICAL HACKING &amp; CTFs <tspan fill="#00ffff" font-weight="700">_</tspan>
       <animate attributeName="opacity" values="0;0;1;1;0" dur="15s" keyTimes="0;0.2;0.21;0.38;0.4" repeatCount="indefinite" />
     </text>
-    <!-- Line 3: Bot Development -->
+    <!-- Line 3: Languages -->
     <text x="255" y="151" fill="#a78bfa" opacity="0" clip-path="url(#tp3)">
-      &gt; PYTHON | C++ | BOT DEVELOPMENT <tspan fill="#00ffff" font-weight="700">_</tspan>
+      &gt; PYTHON | C++ | GO | TYPESCRIPT <tspan fill="#00ffff" font-weight="700">_</tspan>
       <animate attributeName="opacity" values="0;0;1;1;0" dur="15s" keyTimes="0;0.4;0.41;0.58;0.6" repeatCount="indefinite" />
     </text>
-    <!-- Line 4: Pentest -->
+    <!-- Line 4: Networking -->
     <text x="255" y="151" fill="#a78bfa" opacity="0" clip-path="url(#tp4)">
-      &gt; PENETRATION TESTING ENTHUSIAST <tspan fill="#00ffff" font-weight="700">_</tspan>
+      &gt; NETWORKING FUNDAMENTALS &amp; PACKET ANALYSIS <tspan fill="#00ffff" font-weight="700">_</tspan>
       <animate attributeName="opacity" values="0;0;1;1;0" dur="15s" keyTimes="0;0.6;0.61;0.78;0.8" repeatCount="indefinite" />
     </text>
     <!-- Line 5: Always Learning -->
@@ -288,7 +288,7 @@
   <text x="500" y="181"
     font-family="'Share Tech Mono','Courier New',monospace"
     font-size="8.5" text-anchor="middle" fill="#374151" letter-spacing="2">
-    SYS::SECURE &#9642; MODE::ACTIVE &#9642; v2.0.1
+    SYS::SECURE &#9642; MODE::ACTIVE &#9642; SEMESTER-2
   </text>
 
   <!-- Right port indicator -->

@@ -64,28 +64,32 @@ jobs:
           deno-version: v2.x
 
       - name: Render trophy SVG
-        continue-on-error: true
         run: |
+          mkdir -p dist
+          # Pinned to commit e3c89df (verified 2026-11-09). Verify before bumping:
+          # curl -fsSL https://raw.githubusercontent.com/ryo-ma/github-profile-trophy/e3c89df995e92e67cdd4b2acaab9d974583dc1f7/render_svg.ts | head -n 20
           deno run --allow-net --allow-env --allow-read --allow-write \
             https://raw.githubusercontent.com/ryo-ma/github-profile-trophy/e3c89df995e92e67cdd4b2acaab9d974583dc1f7/render_svg.ts \
             ${{ github.repository_owner }} dist/trophy.svg darkhub
+          if [ ! -s dist/trophy.svg ] || ! head -c 100 dist/trophy.svg | grep -q "<svg"; then
+            echo "::error::trophy SVG render failed or invalid"
+            exit 1
+          fi
         env:
           GITHUB_TOKEN1: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_TOKEN2: ${{ secrets.GITHUB_TOKEN }}
 
       # Fetch the typing SVG once and commit it: the animation is embedded in
       # the SVG markup, so the static copy keeps animating on GitHub.
-      # Non-blocking: keep the previous copy on failure so one flaky
-      # third-party service can't wipe out all cards.
+      # Fail loudly on invalid output so stale cards are visible in Actions.
       - name: Save typing SVG
-        continue-on-error: true
         run: |
           mkdir -p dist
-          curl -fsSL "https://readme-typing-svg.demolab.com/?font=Fira+Code&pause=1000&color=7C3AED&center=true&vCenter=true&width=500&lines=Cybersecurity+Student;Ethical+Hacking+%26+CTFs;Network+Fundamentals;Python+%26+TypeScript" -o dist/typing.svg.tmp
+          curl -fsSL "https://readme-typing-svg.demolab.com/?font=Fira+Code&pause=1000&color=7C3AED&center=true&vCenter=true&width=500&lines=Cybersecurity+Student;Ethical+Hacking+%26+CTFs;Network+Fundamentals;Python+%7C+C%2B%2B+%7C+Go+%7C+TypeScript" -o dist/typing.svg.tmp
           if [ -s dist/typing.svg.tmp ] && head -c 100 dist/typing.svg.tmp | grep -q "<svg"; then
             mv dist/typing.svg.tmp dist/typing.svg
           else
-            echo "::warning::typing SVG fetch failed or invalid; keeping previous copy"
+            echo "::error::typing SVG fetch failed or invalid"
             rm -f dist/typing.svg.tmp
             exit 1
           fi
@@ -95,7 +99,6 @@ jobs:
       # output branch together. AUTO_PUSH is disabled to avoid a second,
       # conflicting push targeting the wrong branch.
       - name: Generate profile summary cards
-        continue-on-error: true
         uses: vn7n24fzkq/github-profile-summary-cards@d9632798b299e9ad6940449a859c30742eb5b549 # v0.12.0
         with:
           USERNAME: ${{ github.repository_owner }}
@@ -105,7 +108,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Merge summary cards into dist
-        continue-on-error: true
         run: |
           if [ -d profile-summary-card-output ]; then
             rm -rf dist/profile-summary-card-output
@@ -115,7 +117,7 @@ jobs:
               dist/profile-summary-card-output/README.md \
               dist/profile-summary-card-output/github_dark/README.md
           else
-            echo "::warning::profile-summary-card-output missing (rate-limit or upstream change); keeping previous copy"
+            echo "::error::profile-summary-card-output missing (rate-limit or upstream change)"
             exit 1
           fi
 

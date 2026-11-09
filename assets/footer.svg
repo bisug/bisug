@@ -4,34 +4,27 @@
     <style>
       .sketch {
         fill: none;
-        stroke: #1a1a1a;
+        stroke: #6b7280;
         stroke-width: 2.5;
         stroke-linecap: round;
         stroke-linejoin: round;
       }
       .node {
         fill: #ffffff;
-        stroke: #1a1a1a;
+        stroke: #6b7280;
         stroke-width: 2.5;
       }
       .sketch-light {
         fill: none;
-        stroke: #1a1a1a;
+        stroke: #6b7280;
         stroke-width: 1.5;
         stroke-linecap: round;
         stroke-linejoin: round;
       }
       .node-light {
         fill: #ffffff;
-        stroke: #1a1a1a;
+        stroke: #6b7280;
         stroke-width: 1.5;
-      }
-      /* Dark-mode (GitHub): near-black strokes vanish on dark
-         backgrounds, so switch to a light stroke. */
-      @media (prefers-color-scheme: dark) {
-        .sketch, .sketch-light { stroke: #e5e5e5; }
-        .node, .node-light { fill: #0d1117; stroke: #e5e5e5; }
-        circle[fill="#1a1a1a"] { fill: #e5e5e5; }
       }
     </style>
   </defs>
@@ -122,16 +115,16 @@
   </g>
   
   <!-- Background specks (gently twinkling) -->
-  <circle fill="#1a1a1a" cx="150" cy="25" r="1.5" opacity="0.6">
+  <circle fill="#6b7280" cx="150" cy="25" r="1.5" opacity="0.6">
     <animate attributeName="opacity" values="0.6;0.12;0.6" dur="2.8s" repeatCount="indefinite"/>
   </circle>
-  <circle fill="#1a1a1a" cx="450" cy="80" r="1.5" opacity="0.6">
+  <circle fill="#6b7280" cx="450" cy="80" r="1.5" opacity="0.6">
     <animate attributeName="opacity" values="0.6;0.12;0.6" begin="0.9s" dur="3.4s" repeatCount="indefinite"/>
   </circle>
-  <circle fill="#1a1a1a" cx="580" cy="15" r="1.5" opacity="0.6">
+  <circle fill="#6b7280" cx="580" cy="15" r="1.5" opacity="0.6">
     <animate attributeName="opacity" values="0.6;0.12;0.6" begin="1.7s" dur="4.1s" repeatCount="indefinite"/>
   </circle>
-  <circle fill="#1a1a1a" cx="850" cy="75" r="1.5" opacity="0.6">
+  <circle fill="#6b7280" cx="850" cy="75" r="1.5" opacity="0.6">
     <animate attributeName="opacity" values="0.6;0.12;0.6" begin="0.4s" dur="3s" repeatCount="indefinite"/>
   </circle>
 </svg>

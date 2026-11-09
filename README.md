@@ -48,9 +48,9 @@
 - bisu@cyber-sec-node:~$ nmap -sV current_targets.local
 + Starting Nmap ( https://nmap.org )
 + PORT    STATE SERVICE       REASON
-+ 22/tcp  open  development   Python, C++, Go, TypeScript
-+ 80/tcp  open  networking    Network Fundamentals, Packet Analysis
-+ 443/tcp open  cybersec      Ethical Hacking, Cyber Ethics
++ 22/tcp  open  ssh           Python, C++, Go, TypeScript
++ 80/tcp  open  http          Network Fundamentals, Packet Analysis
++ 443/tcp open  https         Ethical Hacking, Cyber Ethics
 ```
 
 ---
@@ -86,7 +86,6 @@
 
 **Tools & Environment**
 
-![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 ![Linux Mint](https://img.shields.io/badge/Linux_Mint-87CF3E?style=for-the-badge&logo=linuxmint&logoColor=white)
 ![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
@@ -108,7 +107,7 @@
 | **Nmap** | Host discovery, port scanning, service detection |
 | **Burp Suite (Community)** | Learning web request inspection & proxy basics |
 | **Cisco Packet Tracer** | Network topologies, routing & switching practice |
-| **VMware / VirtualBox** | Virtualized lab environments, snapshots before experiments |
+| **VMware** | Virtualized lab environments, snapshots before experiments |
 | **Git & GitHub** | Version control for coursework, labs & this profile |
 | **Docker (learning)** | Running isolated services & lab containers |
 
@@ -136,8 +135,7 @@
 
 <br/>
 
-<img src="https://raw.githubusercontent.com/bisug/bisug/output/profile-summary-card-output/github_dark/3-stats.svg" width="47%"/>
-<img src="https://raw.githubusercontent.com/bisug/bisug/output/profile-summary-card-output/github_dark/4-productive-time.svg" width="47%"/>
+<img src="https://raw.githubusercontent.com/bisug/bisug/output/profile-summary-card-output/github_dark/4-productive-time.svg" width="95%"/>
 
 </div>
 
@@ -214,11 +212,11 @@ root@cyber-sec-node:~/learning# cat current_focus.txt
 [![Portfolio](https://img.shields.io/badge/Portfolio-bisu.com.np-06b6d4?style=for-the-badge&logo=firefoxbrowser&logoColor=white)](https://bisu.com.np)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Bisu_Ghalan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/bisu-ghalan)
 [![Instagram](https://img.shields.io/badge/Instagram-oyeee.bisu-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/oyeee.bisu)
-[![Gmail](https://img.shields.io/badge/Gmail-bisu.ghalan@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bisu.ghalan@gmail.com)
+[![Gmail](https://img.shields.io/badge/Gmail-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bisu.ghalan@gmail.com)
 
 <br/>
 
-*Always open to discussing networking concepts, teaming up for HTB/CTFs, and contributing to open-source or Telegram-related projects!*
+*Always open to discussing networking concepts, teaming up for HTB/CTFs, and contributing to open-source projects!*
 
 </div>
 

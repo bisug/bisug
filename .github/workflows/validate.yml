@@ -1,0 +1,43 @@
+name: Validate SVGs
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "assets/**/*.svg"
+      - ".github/workflows/validate.yml"
+  pull_request:
+    paths:
+      - "assets/**/*.svg"
+      - ".github/workflows/validate.yml"
+  workflow_dispatch:
+
+jobs:
+  validate:
+    name: Validate SVG assets
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Validate SVG XML well-formedness
+        run: |
+          set -euo pipefail
+          fail=0
+          for f in assets/*.svg; do
+            echo "Checking $f"
+            if ! python3 -c "import xml.etree.ElementTree as ET, sys; ET.parse(sys.argv[1])" "$f"; then
+              echo "::error file=$f::Invalid XML"
+              fail=1
+            fi
+            if ! grep -q "<svg" "$f"; then
+              echo "::error file=$f::Missing <svg> root"
+              fail=1
+            fi
+          done
+          exit $fail
