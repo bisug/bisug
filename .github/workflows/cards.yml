@@ -112,10 +112,12 @@ jobs:
           if [ -d profile-summary-card-output ]; then
             rm -rf dist/profile-summary-card-output
             cp -r profile-summary-card-output ./dist/profile-summary-card-output
-            # Drop upstream README wrappers (unused); keep all SVG cards.
+            # Drop upstream README wrappers and unreferenced 3-stats.svg
+            # (duplicates stats.svg; README does not reference it).
             rm -rf \
               dist/profile-summary-card-output/README.md \
-              dist/profile-summary-card-output/github_dark/README.md
+              dist/profile-summary-card-output/github_dark/README.md \
+              dist/profile-summary-card-output/github_dark/3-stats.svg
           else
             echo "::error::profile-summary-card-output missing (rate-limit or upstream change)"
             exit 1

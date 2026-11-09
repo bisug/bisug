@@ -1,22 +1,18 @@
 <div align="center">
 
-<!-- Animated Banner -->
 <img src="./assets/header.svg" width="100%" alt="Bisu Ghalan" />
 
 <br/>
 
-<!-- Typing Animation -->
 <img src="https://raw.githubusercontent.com/bisug/bisug/output/typing.svg" alt="Typing SVG" />
 
 <br/>
 
-<!-- Primary Links -->
 [![Portfolio](https://img.shields.io/badge/Portfolio-bisu.com.np-06b6d4?style=for-the-badge&logo=firefoxbrowser&logoColor=white)](https://bisu.com.np)
 [![GitHub](https://img.shields.io/badge/GitHub-bisug-a78bfa?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bisug)
 
 <br/>
 
-<!-- Stats Badges -->
 [![GitHub Followers](https://img.shields.io/github/followers/bisug?label=FOLLOWERS&style=for-the-badge&color=7c3aed&logo=github&logoColor=white)](https://github.com/bisug?tab=followers)
 [![GitHub Stars](https://img.shields.io/github/stars/bisug?label=STARS&style=for-the-badge&color=06b6d4&logo=github&logoColor=white)](https://github.com/bisug?tab=repositories)
 [![Profile Views](https://komarev.com/ghpvc/?username=bisug&color=4c1d95&style=for-the-badge&label=PROFILE+VIEWS)](https://github.com/bisug)
@@ -95,8 +91,6 @@
 
 ---
 
----
-
 ## Security Toolbox & Lab
 
 | Tool | What I use it for |
@@ -159,7 +153,6 @@
 ![HackTheBox](https://img.shields.io/badge/HackTheBox-111927?style=for-the-badge&logo=hackthebox&logoColor=9FEF00)
 ![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
 ![Cisco](https://img.shields.io/badge/Cisco-1BA0D7?style=for-the-badge&logo=cisco&logoColor=white)
-![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)
 ![Nmap](https://img.shields.io/badge/Nmap-00457C?style=for-the-badge&logo=nmap&logoColor=white)
 ![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=for-the-badge&logo=burpsuite&logoColor=white)
 
@@ -189,10 +182,8 @@ root@cyber-sec-node:~/learning# cat current_focus.txt
 
 <br/>
 
-<!-- Cybernetic Activity Tracker -->
 <img src="./assets/activity-frame.svg" width="100%" alt="Activity Frame" />
 
-<!-- Pac-Man -->
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bisug/bisug/output/pacman-contribution-graph-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bisug/bisug/output/pacman-contribution-graph.svg" />
